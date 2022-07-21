@@ -1,0 +1,336 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F3F3F3;
+    font-family: Roboto, sans-serif;
+    background-image: url(images/Polygon.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto;
+    color: #1A4469;
+    font-family: Montserrat,sans-serif;
+}
+
+/*logo*/
+.logo {
+    width: 300px;
+    height: 300px; 
+    float: left;
+    padding-top: 110px;
+}
+.navbar {
+    position:fixed;
+    padding: 0;
+    margin-top: 0;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90px; 
+    justify-content: space-between;
+}
+
+
+/* navigation bar */
+
+
+.nav-links a {
+    color: #1A4469;
+    text-decoration: none;
+}
+.nav-links {
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-links a:hover {
+     border-bottom: 4px solid #74C6D5;
+        
+    }
+.nav-links li {
+        padding: 5px 25px;
+        list-style: none;
+    }
+/*css du 1er page*/
+.first-page {
+    display: flex;
+}
+    .first-page p {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+
+.button {
+    background-color: #599ED3;
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-decoration:none;
+    outline:none;
+    
+}
+    .button:hover {
+        background-color: #74C6D5;
+    }
+
+
+/*A propos de nous*/
+.a-propos {
+    padding-top: 15%;
+    height: 50vh;
+}
+    .a-propos p {
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 3%;
+        width: 70%;
+        color: #1A4469;
+        font-size: 21px;
+    }
+    .a-propos h2 {
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        font-weight: 700;
+        border-bottom: 4px solid #1A4469;
+        width: 14%;
+        padding-bottom: 5px;
+    }
+
+
+/*pourquoi nous*/
+.why-us h2 {
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    border-bottom: 4px solid #1A4469;
+    width: 18%;
+    margin:auto;
+}
+.why-us img {
+    width: 900px;
+    height: 450px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* les services*/
+.services {
+    background-color:transparent;
+    
+}
+/* colonne */
+.column {
+    width: 50%;
+    background-color: transparent;
+    float: left;
+    margin: auto;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:transparent;
+}
+
+  
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        height:500px;
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .img1{
+        width:200px;
+        height:200px;
+    }
+}
+
+.card {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    text-align: center;
+    margin: auto;
+    height: 610px;
+    align-items: center;
+    background-color: #F3F3F3;
+}
+
+/* footer de contact*/
+
+footer {
+    margin-top: 15%;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.container {
+    display: flex;
+    padding: 2rem;
+}
+
+.container .section {
+        flex-basis: 50%;
+        padding: 0 20px;
+    }
+
+.section h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+    .section .content::before {
+        position: absolute;
+        content: '';
+        top: -10px;
+        height: 2px;
+        width: 100%;
+    }
+
+    .section .content::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 15%;
+        background-color: #74C6D5;
+        top: -10px;
+    }
+
+
+
+.social a {
+        padding: 0 10px;
+        margin-top:20px;
+        
+}
+
+
+.left .content .social a span:hover {
+       background: #d74C6D5;
+            }
+
+.center .content .fas {
+    font-size: 1.1rem;
+    background: transparent;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #656565;
+}
+
+   
+.center .content .text {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone {
+    margin: 15px 0;
+}
+
+.right form .text {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form input {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #E9E9E9;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+        height: 40px;
+        width: 100%;
+        border: none;
+        outline: none;
+        background: #599ED3;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        transition: 0.3s;
+}
+
+
+.right form .btn button:hover {
+         background: #74C6D5;
+}
+
+.footer-bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    
+}
+
+.footer-bottom center a {
+        text-decoration: none;
+        color: #74C6D5;
+    }
+
+ 
+/*responsive footer*/
+@media screen and (max-width:700px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .left .content {
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+        .container .section {
+            margin: 5px 0;
+        }
+}
+
+        
+
+   
